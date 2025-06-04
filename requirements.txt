@@ -1,0 +1,9 @@
+llama-index
+llama-index-core
+llama-index-tools-duckduckgo
+llama_index-tools-wikipedia
+llama-index-embeddings-huggingface
+llama-index-readers-web[html2text]
+llama-index-readers-wikipedia
+
+dotenv
