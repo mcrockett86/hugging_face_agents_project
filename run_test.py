@@ -9,7 +9,7 @@
 
 # load environment variables from .env file (e.g., OpenAI API key)
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv('agents_course.env')
 
 from llama_index.core.agent.workflow import AgentWorkflow, AgentOutput, ToolCall, ToolCallResult
 from tqdm import tqdm

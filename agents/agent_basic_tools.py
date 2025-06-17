@@ -13,7 +13,7 @@ with open('agents/prompts/system_prompt_agent_basic_tools.txt') as f:
     system_prompt_agent_basic_tools = f.read()
 
 # Define the Settings with LLM and Local Embedding Model
-Settings.llm = OpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"), request_timeout=360.0)
+Settings.llm = OpenAI(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), request_timeout=360.0)
 Settings.embed_model = "local:BAAI/bge-base-en-v1.5"
 
 # Create the Basisc Tools agsent

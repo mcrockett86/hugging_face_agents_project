@@ -13,7 +13,7 @@ with open('agents/prompts/system_prompt_wikipedia.txt') as f:
     system_prompt_wikipedia = f.read()
 
 # Define the Settings with LLM and Local Embedding Model
-Settings.llm = OpenAI(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"), request_timeout=360.0)
+Settings.llm = OpenAI(model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"), request_timeout=360.0)
 Settings.embed_model = "local:BAAI/bge-base-en-v1.5"
 
 # Create the Wikipedia agent
